@@ -21,3 +21,7 @@ Route::get('comptes', function() {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/fact', function() {
+    return view('home');
+  });
